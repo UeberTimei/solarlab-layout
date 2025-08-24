@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ad Board</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-bar">
+        <div class="container">
+          <a href="#" class="top-bar__link">
+            <svg
+              class="top-bar__icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span class="top-bar__text">Войти</span>
+          </a>
+          <a href="#" class="top-bar__link top-bar__link--cta"
+            >Новое объявление +</a
+          >
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="container">
+          <h1 class="main-header__title">Доска объявлений</h1>
+          <button type="button" class="category-btn">
+            <div class="category-btn__icon">
+              <svg
+                class="icon"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </div>
+            <span class="category-btn__text"> Все категории </span>
+          </button>
+          <form class="search-form">
+            <input
+              type="text"
+              class="search-form__input"
+              placeholder="Поиск по объявлениям"
+            />
+            <button type="submit" class="search-form__button">Найти</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main class="content-area">
+      <h2 class="content-area__title">Рекомендации для вас</h2>
+      <div class="listings-grid">
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/fender.png"
+            alt="Гитара Fender"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">Гитара Fender</p>
+            <p class="product-card__price">20 000 ₽</p>
+            <p class="product-card__meta">Москва</p>
+            <p class="product-card__meta">Сегодня 14:12</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/ford.png"
+            alt="Ford Mustang"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">
+              Ford Mustang 5.0 AT, 2019, 66 000 км
+            </p>
+            <p class="product-card__price">3 500 000 ₽</p>
+            <p class="product-card__meta">Симферополь</p>
+            <p class="product-card__meta">Вчера 19:59</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/iphone.png"
+            alt="iPhone 13 mini"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">iPhone 13 mini, 128 ГБ</p>
+            <p class="product-card__price">13 990 ₽</p>
+            <p class="product-card__meta">Севастополь</p>
+            <p class="product-card__meta">21 августа 10:03</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/coffee.png"
+            alt="Кофемашина De'Longhi"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">Кофемашина De'Longhi</p>
+            <p class="product-card__price">35 000 ₽</p>
+            <p class="product-card__meta">Санкт-Петербург</p>
+            <p class="product-card__meta">Сегодня 09:45</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/ps.png"
+            alt="Sony PlayStation 5"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">Sony PlayStation 5</p>
+            <p class="product-card__price">45 000 ₽</p>
+            <p class="product-card__meta">Казань</p>
+            <p class="product-card__meta">Сегодня 11:30</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/samsung.png"
+            alt="Смартфон Samsung Galaxy S22"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">
+              Смартфон Samsung Galaxy S22, 256 ГБ
+            </p>
+            <p class="product-card__price">65 000 ₽</p>
+            <p class="product-card__meta">Екатеринбург</p>
+            <p class="product-card__meta">Сегодня 15:20</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/macbook.png"
+            alt="Компьютер Apple MacBook Pro 2021"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">Компьютер Apple MacBook Pro 2021</p>
+            <p class="product-card__price">150 000 ₽</p>
+            <p class="product-card__meta">Новосибирск</p>
+            <p class="product-card__meta">Вчера 21:15</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/rolex.png"
+            alt="Часы Rolex Submariner"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">Часы Rolex Submariner</p>
+            <p class="product-card__price">350 000 ₽</p>
+            <p class="product-card__meta">Москва</p>
+            <p class="product-card__meta">Вчера 17:05</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/bike.png"
+            alt="Мотоцикл Kawasaki Ninja 2020"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">Мотоцикл Kawasaki Ninja 2020</p>
+            <p class="product-card__price">550 000 ₽</p>
+            <p class="product-card__meta">Ростов-на-Дону</p>
+            <p class="product-card__meta">21 августа 14:25</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/fender.png"
+            alt="Гитара Fender"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">Гитара Fender</p>
+            <p class="product-card__price">20 000 ₽</p>
+            <p class="product-card__meta">Москва</p>
+            <p class="product-card__meta">Сегодня 14:12</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/ford.png"
+            alt="Ford Mustang"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">
+              Ford Mustang 5.0 AT, 2019, 66 000 км
+            </p>
+            <p class="product-card__price">3 500 000 ₽</p>
+            <p class="product-card__meta">Симферополь</p>
+            <p class="product-card__meta">Вчера 19:59</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/iphone.png"
+            alt="iPhone 13 mini"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">iPhone 13 mini, 128 ГБ</p>
+            <p class="product-card__price">13 990 ₽</p>
+            <p class="product-card__meta">Севастополь</p>
+            <p class="product-card__meta">21 августа 10:03</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/coffee.png"
+            alt="Кофемашина De'Longhi"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">Кофемашина De'Longhi</p>
+            <p class="product-card__price">35 000 ₽</p>
+            <p class="product-card__meta">Санкт-Петербург</p>
+            <p class="product-card__meta">Сегодня 09:45</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/ps.png"
+            alt="Sony PlayStation 5"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">Sony PlayStation 5</p>
+            <p class="product-card__price">45 000 ₽</p>
+            <p class="product-card__meta">Казань</p>
+            <p class="product-card__meta">Сегодня 11:30</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/samsung.png"
+            alt="Смартфон Samsung Galaxy S22"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">
+              Смартфон Samsung Galaxy S22, 256 ГБ
+            </p>
+            <p class="product-card__price">65 000 ₽</p>
+            <p class="product-card__meta">Екатеринбург</p>
+            <p class="product-card__meta">Сегодня 15:20</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            class="product-card__image"
+            src="./assets/macbook.png"
+            alt="Компьютер Apple MacBook Pro 2021"
+          />
+          <div class="product-card__info">
+            <p class="product-card__title">Компьютер Apple MacBook Pro 2021</p>
+            <p class="product-card__price">150 000 ₽</p>
+            <p class="product-card__meta">Новосибирск</p>
+            <p class="product-card__meta">Вчера 21:15</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
